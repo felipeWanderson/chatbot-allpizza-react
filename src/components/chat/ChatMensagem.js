@@ -2,7 +2,9 @@ import React from 'react'
 
 const ChatMensagem = props => {
     return (
-        <div>digite sua mensagem....</div>
+        <div className='chat-mensagem'>
+            digite sua mensagem....
+        </div>
     )
 }
 
