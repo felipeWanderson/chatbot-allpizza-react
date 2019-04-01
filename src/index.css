@@ -30,7 +30,7 @@ code {
 .chatbot {
   grid-area: chatbot;
   background-color: #f1f1f1;
-  height: calc(100vh - 200px);
+  height: calc(100vh - 170px);
 }
 
 .footer {
