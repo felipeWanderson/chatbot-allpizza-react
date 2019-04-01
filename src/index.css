@@ -14,43 +14,41 @@ code {
 }
 
 .header {
+  grid-area: header;
   background: #647ec7;
   text-align: center;
   color: aliceblue;
-  padding: 20px;
+
 }
 
 .home {
-  flex: 60%;
+  grid-area: home;
   background-color: white;
-  padding: 20px;
   text-align: center;
-  position: fixed;
-  left: 0;
-  height: 100%;
-  width: 60%;
 }
 
 .chatbot {
-  flex: 40%;
+  grid-area: chatbot;
   background-color: #f1f1f1;
-  padding: 20px;
-  position: fixed;
-  right: 0;
-  height: 100%;
-  width: 40%;
+  height: calc(100vh - 200px);
 }
 
 .footer {
-  padding: 20px;
+  grid-area: footer;
   text-align: center;
   background: #ddd;
-  position: fixed;
+  height: 50px;
   width: 100%;
+  padding: 5px;
   bottom: 0;
+  position: absolute;
+
 }
 
 .conteudo{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-areas: 
+  'header header header header'
+  'home home chatbot chatbot'
+  'footer footer footer footer';
 }
