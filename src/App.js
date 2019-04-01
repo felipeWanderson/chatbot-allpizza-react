@@ -10,8 +10,10 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Home />
-        <ChatBot />
+        <div className='conteudo'>
+          <Home />
+          <ChatBot />
+        </div>
         <Footer />
       </div>
     );

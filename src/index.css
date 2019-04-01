@@ -12,3 +12,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.header {
+  background: blue;
+  text-align: center;
+  color: aliceblue;
+  padding: 20px;
+}
+
+.home {
+  flex: 60%;
+  background-color: aqua;
+  padding: 20%;
+}
+
+.chatbot {
+  flex: 40%;
+  background-color: cadetblue;
+  padding: 20px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: red;
+}
+
+.conteudo{
+  display: flex;
+  flex-wrap: wrap;
+}
