@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import {InputGroup, InputGroupAddon, Button,Input} from 'reactstrap';
 import { connect } from 'react-redux'; 
 
+import{enviaMensagem} from './../../store/actions/chat';
+
 class ChatMensagem extends Component {
     constructor(props) {
         super(props)
@@ -11,6 +13,8 @@ class ChatMensagem extends Component {
     inputEnviaTexto(e){
         if(e.keyCode === 13){
             console.log(e.target.value);
+            this.props.enviaTexto(e.target.value);
+            e.target.value = '';
         }
         
     }
@@ -28,6 +32,12 @@ class ChatMensagem extends Component {
             </div>
         );
     }
+
 }
 
-export default connect(null,null)(ChatMensagem) 
+const mapDispatchToProps = (dispatch)=>{
+    return {
+        enviaTexto: (msg) => dispatch(enviaMensagem(msg))
+    }
+}
+export default connect(null, mapDispatchToProps)(ChatMensagem) 
