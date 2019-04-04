@@ -10,6 +10,4 @@ export default function chat(state = INITIAL_STATE, action = {}){
             return state;
         }
     }
-     
-
 }
