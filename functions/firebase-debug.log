@@ -57,3 +57,4 @@
 [debug] [2019-04-15T05:17:05.514Z] <<< HTTP RESPONSE 200
 [debug] [2019-04-15T05:17:05.514Z] Starting @google-cloud/functions-emulator
 [debug] [2019-04-15T05:17:18.270Z] Parsing function triggers
+[info] +  functions: conversa: http://localhost:5000/meu-projeto-chat-all-pizza/us-central1/conversa
