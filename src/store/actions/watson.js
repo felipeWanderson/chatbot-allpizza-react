@@ -7,10 +7,10 @@ export const conversaWatsonRequest = () => {
     }
 }
 
-export const conversaWatsonSucess = (resposta) => {
+export const conversaWatsonSucess = (respostas) => {
     return {
         type: 'CONVERSA_WATSON_SUCESS',
-        resposta,
+        respostas,
         carregando: false,
         erro: false
     }
