@@ -26,3 +26,34 @@
 [debug] [2019-04-05T14:26:46.634Z] Starting @google-cloud/functions-emulator
 [debug] [2019-04-05T14:26:58.235Z] Parsing function triggers
 [info] +  functions: conversa: http://localhost:5000/meu-projeto-chat-all-pizza/us-central1/conversa
+[debug] [2019-04-15T05:16:39.803Z] ----------------------------------------------------------------------
+[debug] [2019-04-15T05:16:39.811Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\felip\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2019-04-15T05:16:39.812Z] CLI Version:   6.5.2
+[debug] [2019-04-15T05:16:39.812Z] Platform:      win32
+[debug] [2019-04-15T05:16:39.813Z] Node Version:  v10.15.0
+[debug] [2019-04-15T05:16:39.866Z] Time:          Mon Apr 15 2019 02:16:39 GMT-0300 (GMT-03:00)
+[debug] [2019-04-15T05:16:39.867Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-04-15T05:16:39.977Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-04-15T05:16:39.980Z] > authorizing via signed-in user
+[debug] [2019-04-15T05:16:39.980Z] [iam] checking project meu-projeto-chat-all-pizza for permissions ["firebase.projects.get"]
+[debug] [2019-04-15T05:16:39.985Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-04-15T05:16:39.985Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-04-15T05:16:41.036Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-15T05:16:41.071Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/meu-projeto-chat-all-pizza:testIamPermissions  
+
+[debug] [2019-04-15T05:16:43.048Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-15T05:16:43.050Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/meu-projeto-chat-all-pizza  
+ 
+[debug] [2019-04-15T05:16:44.506Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\felip\Desktop\ws\chatbot-allpizza'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-04-15T05:17:03.794Z] Fetching environment
+[debug] [2019-04-15T05:17:03.799Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/966425400253:getServerAppConfig  
+ 
+[debug] [2019-04-15T05:17:05.514Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-15T05:17:05.514Z] Starting @google-cloud/functions-emulator
+[debug] [2019-04-15T05:17:18.270Z] Parsing function triggers

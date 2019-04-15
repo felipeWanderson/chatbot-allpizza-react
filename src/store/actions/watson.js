@@ -1,3 +1,4 @@
+import axios from 'axios'
 export const conversaWatsonRequest = () => {
     return {
         type: 'CONVERSA_WATSON_REQUEST',
@@ -6,11 +7,10 @@ export const conversaWatsonRequest = () => {
     }
 }
 
-export const conversaWatsonSucess = (mensagens, contexto) => {
+export const conversaWatsonSucess = (resposta) => {
     return {
         type: 'CONVERSA_WATSON_SUCESS',
-        mensagens,
-        contexto,
+        resposta,
         carregando: false,
         erro: false
     }
@@ -27,5 +27,10 @@ export const conversaWatsonError = () => {
 export const conversaWatson = ((mensagem, contexto) => {
     return dispach => {
         dispach(conversaWatsonRequest())
+        //chama o backend do watson (firebase)
+        const url = 'http://localhost:5000/meu-projeto-chat-all-pizza/us-central1/conversa'
+        axios.post(url, {mensagem, contexto})
+             .then((data)=> dispach(conversaWatsonSucess(data)))
+             .catch(() => dispach(conversaWatsonError()))
     }
 })
