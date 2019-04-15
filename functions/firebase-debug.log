@@ -1,60 +1,59 @@
-[debug] [2019-04-05T14:26:25.960Z] ----------------------------------------------------------------------
-[debug] [2019-04-05T14:26:25.971Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\felip\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
-[debug] [2019-04-05T14:26:25.973Z] CLI Version:   6.5.2
-[debug] [2019-04-05T14:26:25.973Z] Platform:      win32
-[debug] [2019-04-05T14:26:25.973Z] Node Version:  v10.15.0
-[debug] [2019-04-05T14:26:25.982Z] Time:          Fri Apr 05 2019 11:26:25 GMT-0300 (GMT-03:00)
-[debug] [2019-04-05T14:26:25.982Z] ----------------------------------------------------------------------
+[debug] [2019-04-15T06:27:23.069Z] ----------------------------------------------------------------------
+[debug] [2019-04-15T06:27:23.076Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\felip\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2019-04-15T06:27:23.076Z] CLI Version:   6.5.2
+[debug] [2019-04-15T06:27:23.077Z] Platform:      win32
+[debug] [2019-04-15T06:27:23.077Z] Node Version:  v10.15.0
+[debug] [2019-04-15T06:27:24.700Z] Time:          Mon Apr 15 2019 03:27:23 GMT-0300 (GMT-03:00)
+[debug] [2019-04-15T06:27:24.700Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2019-04-05T14:26:26.039Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-04-05T14:26:26.041Z] > authorizing via signed-in user
-[debug] [2019-04-05T14:26:26.041Z] [iam] checking project meu-projeto-chat-all-pizza for permissions ["firebase.projects.get"]
-[debug] [2019-04-05T14:26:26.048Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/meu-projeto-chat-all-pizza:testIamPermissions  
+[debug] [2019-04-15T06:27:24.888Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-04-15T06:27:24.890Z] > authorizing via signed-in user
+[debug] [2019-04-15T06:27:24.890Z] [iam] checking project meu-projeto-chat-all-pizza for permissions ["firebase.projects.get"]
+[debug] [2019-04-15T06:27:24.896Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/meu-projeto-chat-all-pizza:testIamPermissions  
 
-[debug] [2019-04-05T14:26:27.429Z] <<< HTTP RESPONSE 200
-[debug] [2019-04-05T14:26:27.436Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/meu-projeto-chat-all-pizza  
+[debug] [2019-04-15T06:27:28.509Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-15T06:27:28.516Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/meu-projeto-chat-all-pizza  
  
-[debug] [2019-04-05T14:26:31.578Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-15T06:27:29.884Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from 'C:\Users\felip\Desktop\ws\chatbot-allpizza'...
 [info] 
 [info] i  functions: Preparing to emulate functions.
-[debug] [2019-04-05T14:26:46.022Z] Fetching environment
-[debug] [2019-04-05T14:26:46.032Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/966425400253:getServerAppConfig  
+[debug] [2019-04-15T06:27:46.470Z] Fetching environment
+[debug] [2019-04-15T06:27:46.483Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/966425400253:getServerAppConfig  
  
-[debug] [2019-04-05T14:26:46.632Z] <<< HTTP RESPONSE 200
-[debug] [2019-04-05T14:26:46.634Z] Starting @google-cloud/functions-emulator
-[debug] [2019-04-05T14:26:58.235Z] Parsing function triggers
+[debug] [2019-04-15T06:27:48.082Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-15T06:27:48.083Z] Starting @google-cloud/functions-emulator
+[debug] [2019-04-15T06:28:00.805Z] Parsing function triggers
 [info] +  functions: conversa: http://localhost:5000/meu-projeto-chat-all-pizza/us-central1/conversa
-[debug] [2019-04-15T05:16:39.803Z] ----------------------------------------------------------------------
-[debug] [2019-04-15T05:16:39.811Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\felip\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
-[debug] [2019-04-15T05:16:39.812Z] CLI Version:   6.5.2
-[debug] [2019-04-15T05:16:39.812Z] Platform:      win32
-[debug] [2019-04-15T05:16:39.813Z] Node Version:  v10.15.0
-[debug] [2019-04-15T05:16:39.866Z] Time:          Mon Apr 15 2019 02:16:39 GMT-0300 (GMT-03:00)
-[debug] [2019-04-15T05:16:39.867Z] ----------------------------------------------------------------------
+[debug] [2019-04-15T16:19:42.155Z] ----------------------------------------------------------------------
+[debug] [2019-04-15T16:19:42.168Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\felip\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2019-04-15T16:19:42.170Z] CLI Version:   6.5.2
+[debug] [2019-04-15T16:19:42.170Z] Platform:      win32
+[debug] [2019-04-15T16:19:42.171Z] Node Version:  v10.15.0
+[debug] [2019-04-15T16:19:42.229Z] Time:          Mon Apr 15 2019 13:19:42 GMT-0300 (GMT-03:00)
+[debug] [2019-04-15T16:19:42.230Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2019-04-15T05:16:39.977Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-04-15T05:16:39.980Z] > authorizing via signed-in user
-[debug] [2019-04-15T05:16:39.980Z] [iam] checking project meu-projeto-chat-all-pizza for permissions ["firebase.projects.get"]
-[debug] [2019-04-15T05:16:39.985Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2019-04-15T05:16:39.985Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2019-04-15T16:19:42.340Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-04-15T16:19:42.341Z] > authorizing via signed-in user
+[debug] [2019-04-15T16:19:42.342Z] [iam] checking project meu-projeto-chat-all-pizza for permissions ["firebase.projects.get"]
+[debug] [2019-04-15T16:19:42.347Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-04-15T16:19:42.347Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2019-04-15T05:16:41.036Z] <<< HTTP RESPONSE 200
-[debug] [2019-04-15T05:16:41.071Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/meu-projeto-chat-all-pizza:testIamPermissions  
+[debug] [2019-04-15T16:19:44.175Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-15T16:19:44.217Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/meu-projeto-chat-all-pizza:testIamPermissions  
 
-[debug] [2019-04-15T05:16:43.048Z] <<< HTTP RESPONSE 200
-[debug] [2019-04-15T05:16:43.050Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/meu-projeto-chat-all-pizza  
+[debug] [2019-04-15T16:19:48.033Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-15T16:19:48.040Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/meu-projeto-chat-all-pizza  
  
-[debug] [2019-04-15T05:16:44.506Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-15T16:19:50.151Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from 'C:\Users\felip\Desktop\ws\chatbot-allpizza'...
 [info] 
 [info] i  functions: Preparing to emulate functions.
-[debug] [2019-04-15T05:17:03.794Z] Fetching environment
-[debug] [2019-04-15T05:17:03.799Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/966425400253:getServerAppConfig  
+[debug] [2019-04-15T16:20:06.207Z] Fetching environment
+[debug] [2019-04-15T16:20:06.219Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/966425400253:getServerAppConfig  
  
-[debug] [2019-04-15T05:17:05.514Z] <<< HTTP RESPONSE 200
-[debug] [2019-04-15T05:17:05.514Z] Starting @google-cloud/functions-emulator
-[debug] [2019-04-15T05:17:18.270Z] Parsing function triggers
-[info] +  functions: conversa: http://localhost:5000/meu-projeto-chat-all-pizza/us-central1/conversa
+[debug] [2019-04-15T16:20:08.238Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-15T16:20:08.240Z] Starting @google-cloud/functions-emulator
+[debug] [2019-04-15T16:20:20.962Z] Parsing function triggers

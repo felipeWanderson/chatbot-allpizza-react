@@ -2,6 +2,7 @@ const functions = require('firebase-functions');
 const watson = require('watson-developer-cloud/assistant/v1');
 require('dotenv').config();
 
+const cors = require('cors')({origin: true});
 //export const helloWorld = https.onRequest((request, response) => {
 //response.send("Hello from ChatBot!");
 //});
@@ -16,18 +17,20 @@ const chatbot = new watson({
 const workspace_id = process.env.WORKSPACE_ID;
 
 exports.conversa = functions.https.onRequest((req, resp) =>{
-    let payload = {
-        workspace_id,
-        context: req.body.context || {},
-        input: req.body.context|| {}
-    };
-
-    chatbot.message(payload, (err, data) => {
-        if(err){
-            return resp.status(err.code || 500).json(err);
-        }
-
-        return resp.json(trataResposta(payload, data));
+    cors(req, resp, () =>{
+        const payload = {
+            workspace_id,
+            context: req.body.context || {},
+            input: req.body.context|| {}
+        };
+    
+        chatbot.message(payload, (err, data) => {
+            if(err){
+                return resp.status(err.code || 500).json(err);
+            }
+    
+            return resp.json(trataResposta(payload, data));
+        });
     });
 });
 

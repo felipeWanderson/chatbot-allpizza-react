@@ -1,4 +1,5 @@
 import axios from 'axios'
+
 export const conversaWatsonRequest = () => {
     return {
         type: 'CONVERSA_WATSON_REQUEST',
