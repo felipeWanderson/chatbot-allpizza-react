@@ -1,5 +1,5 @@
 import axios from 'axios'
-
+import {enviaMensagem} from './chat'
 export const conversaWatsonRequest = () => {
     return {
         type: 'CONVERSA_WATSON_REQUEST',
@@ -31,7 +31,14 @@ export const conversaWatson = ((mensagem, contexto) => {
         //chama o backend do watson (firebase)
         const url = 'http://localhost:5000/meu-projeto-chat-all-pizza/us-central1/conversa'
         axios.post(url, {mensagem, contexto})
-             .then((data)=> dispach(conversaWatsonSucess(data)))
-             .catch(() => dispach(conversaWatsonError()))
+             .then((data)=> {
+                dispach(conversaWatsonSucess(data))
+                const msg = {
+                     texto: data.data.output.text[0],
+                     origem: 'bot'
+                }
+                dispach(enviaMensagem(msg))
+            })
+            .catch(() => dispach(conversaWatsonError()))
     }
 })
